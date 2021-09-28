@@ -20,6 +20,7 @@
     console.log(list);
 
     console.log(getUnsuccessfulStudents(list));
+    
     list.push(
         updateStudentWithCustom(
             studentsMock.getStudent()
