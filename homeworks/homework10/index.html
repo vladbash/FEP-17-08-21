@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 10 | TODO List</title>
+    <script src="./script.js" defer></script>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <style>
+        .span-checked {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form id="task-form"> -->
+    <div class="nes-container with-title is-centered">
+        <div class="nes-field">
+            <label for="name_field">Your name</label>
+            <input type="text" placeholder="What do you want to do?" id="task-form-input" class="nes-input">
+        </div>
+        <button id="task-form-submit" type="button" class="nes-btn is-primary">Add item</button>
+    </div>
+    <!-- </form> -->
+    <ul id="items-list" style="list-style: none;"></ul>
+
+    <script type="text/template" id="item-template">
+        <label>
+            <input type="checkbox" class="nes-checkbox" />
+            <span>{{inputContent}}</span>
+            <button class="nes-btn is-error">x</button>
+        </label>
+    </script>
+</body>
+
+</html>
