@@ -38,16 +38,56 @@
 //     e.preventDefault();
 // });
 
-const els = document.getElementsByClassName('active');
+// const els = document.getElementsByClassName('active');
 
-console.log(els);
+// console.log(els);
 
-const nodes = document.querySelectorAll('.active');
+// const nodes = document.querySelectorAll('.active');
 
-console.log(nodes);
+// console.log(nodes);
 
-document.getElementById('super-btn').addEventListener('click', () => {
-    document.getElementById('demo-list').children[0].classList.add('active');
-    console.log(els);
-    console.log(nodes);
-});
+// document.getElementById('super-btn').addEventListener('click', () => {
+//     document.getElementById('demo-list').children[0].classList.add('active');
+//     console.log(els);
+//     console.log(nodes);
+// });
+
+// Closure
+
+// function add(a) {
+//     console.log(a);
+//     return (b) => {
+//         console.log(a);
+//         console.log(b);
+//         return a + b;
+//     };
+// }
+
+// const initedSum = add(2);
+
+// console.log(typeof initedSum); // function
+
+// console.log(initedSum(4));
+
+// // E.g.
+
+// function map(array) {
+//     return (cb) => {
+//         return array.map(cb);
+//     }
+// }
+
+// const students = [{
+//     name: 'Alex'
+// }, {
+//     name: 'Bob'
+// }];
+
+// const studentsMap = map(students);
+
+// console.log(
+//     studentsMap(e => ({
+//         ...e,
+//         age: 18
+//     }))
+// );
