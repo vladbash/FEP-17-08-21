@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 15 | DOM Event bubbling</title>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <main id="some-main">
+        <div id="some-div">
+            <ul id="some-ul">
+                <li id="some-li">
+                    <button id="some-id">Click me!</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- <div
+        id="super-block"
+        style="width: 256px; height: 256px; display: flex; justify-content: center; align-items: center;background-color: red;">
+        <button id="super-btn">Click on me!</button>
+    </div> -->
+
+    <button id="super-btn">Click on me!</button>
+
+    <ul id="demo-list">
+        <li></li>
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+        <li class="active"></li>
+        <li class="active"></li>
+    </ul>
+
+</body>
+
+</html>
