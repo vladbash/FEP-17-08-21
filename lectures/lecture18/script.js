@@ -74,7 +74,9 @@
 // Object.keys({ key: '', value: '', type: '' }); // -> ['key', 'value', 'type']
 
 // Prototype
-function Foo() {}
+// function Foo() {}
 
-const a = new Number(8); // Object
-console.dir(a);
+// const a = new Number(8); // Object
+// console.dir(a);
+
+
