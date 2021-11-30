@@ -1,0 +1,22 @@
+.container {
+    margin: 24px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions-container {
+    margin-top: 16px;
+    display: flex;
+}
+
+.member-card {
+    min-width: 356px;
+    
+}
