@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 16</title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+
+    <script src="./service/api.js" defer></script>
+    <script src="./utils/templating.js" defer></script>
+
+    <script src="./components/login.js" defer></script>
+    <script src="./components/userList.js" defer></script>
+
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+
+    </div>
+
+    <script type="text/template" id="login-template">
+        <form id="login-form">
+            <div class="nes-field">
+                <label for="email_field">Your email</label>
+                <input type="email" id="email_field" class="nes-input">
+            </div>
+            <div class="nes-field">
+                <label for="password_field">Your Password</label>
+                <input type="password" id="password_field" class="nes-input">
+            </div>
+            <button type="button" class="nes-btn is-success">Log in</button>
+        </form>
+    </script>
+
+    <script type="text/template" id="user-list-template">
+        <div class="list-container" id="user-list">
+
+        </div>
+        <div class="actions-container">
+            <button type="button" class="nes-btn is-primary" id="action-prev">Prev</button>
+            <div class="pages" id="pages"></div>
+            <button type="button" class="nes-btn is-success" id="action-next">Next</button>
+        </div>
+    </script>
+
+    <script type="text/template" id="user-card-template">
+        <section class="nes-container is-dark member-card">
+            <div class="avatar">
+                <img data-src="{{avatar}}" alt="{{name}}"
+                    class="" src="{{avatar}}">
+                </div>
+            <div class="profile">
+                <h4 class="name">{{name}}</h4>
+                <p>{{email}}</p>
+            </div>
+        </section>
+    </script>
+
+</body>
+
+</html>
