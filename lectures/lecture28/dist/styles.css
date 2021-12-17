@@ -1,0 +1,25 @@
+.main-block {
+  background: purple;
+  color: blue;
+  border: 1px dashed grey;
+}
+
+.main-block__inner {
+  width: 50%;
+}
+.demo-input {
+  border: 1px solid blue;
+}
+.main-block {
+  background: purple;
+  color: blue;
+  border: 1px dashed grey;
+}
+
+.main-block__inner {
+  width: 50%;
+}
+
+.demo-input {
+  border: 1px solid blue;
+}

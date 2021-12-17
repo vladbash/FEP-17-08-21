@@ -1,0 +1,11 @@
+@import './vars';
+
+.main-block {
+    background: $common-block-bg;
+    color: $primary;
+    border: $common-border-weight dashed $secondary;
+
+    &__inner {
+        width: 50%;
+    }
+}

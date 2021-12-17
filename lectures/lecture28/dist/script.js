@@ -1,0 +1,1 @@
+console.log("app");const userName="John Doe",userAttributes={name:"John",citizen:"IT",rating:87.3};for(let o in userAttributes)console.log(o);console.log("components index"),console.log("components UserComponent");
