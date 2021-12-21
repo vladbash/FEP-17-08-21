@@ -25,7 +25,7 @@ function buildStyles() {
 }
 
 function buildScripts() {
-    return gulp.src('./src/**/*.js')
+    return gulp.src(['./src/**/*.js', './server.js'])
         .pipe(concat('script.js'))
         .pipe(minify())
         .pipe(uglify())
