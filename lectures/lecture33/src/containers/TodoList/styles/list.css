@@ -1,0 +1,13 @@
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo-item-form {
+    width: 75%;
+    margin-top: 15px;
+}
+
+.list-container {}

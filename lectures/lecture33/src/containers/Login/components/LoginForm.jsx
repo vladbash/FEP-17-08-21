@@ -32,19 +32,31 @@ class LoginForm extends Component {
   render() {
     return (
       <form className="login-form" onSubmit={this.handleFormSubmit}>
-        <input
-          type="text"
-          placeholder="User email"
-          value={this.state.email}
-          onChange={this.handleLoginInputChange}
-        />
-        <input
-          type="password"
-          placeholder="User password"
-          value={this.state.password}
-          onChange={this.handlePasswordInputChange}
-        />
-        <input type="submit" value="Log in" />
+        <div className="nes-field">
+          <label for="email_field">Your email</label>
+          <input
+            type="text"
+            className="nes-input"
+            id="email_field"
+            placeholder="User email"
+            value={this.state.email}
+            onChange={this.handleLoginInputChange}
+          />
+        </div>
+
+        <div className="nes-field">
+          <label for="password_field">Your password</label>
+          <input
+            type="password"
+            className="nes-input"
+            id="password_field"
+            placeholder="User password"
+            value={this.state.password}
+            onChange={this.handlePasswordInputChange}
+          />
+        </div>
+
+        <input type="submit" className="nes-btn is-primary" value="Log in" />
       </form>
     );
   }
